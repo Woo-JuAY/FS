@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="share.css">
+    <style>   
+        .reco{
+            height: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            border-bottom: 1px rgb(177, 177, 177)
+        }
+        .reco > #reco2{
+            border-left: 1px double black;
+            border-right: 1px double black;
+        }
+        .main{
+            margin-top: 10px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 5fr 5fr;
+            text-align: center;
+            align-items: center;
+        }.div-subarticle{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .article{
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="fnav">
+        <div class="fnav-l">
+            menu
+        </div>
+        <div class="fnav-r">
+            <input type="button" value="login">
+            <input type="button" value="sign up">
+        </div>
+    </div>
+    <div class="title">
+        <div class="title-item"><h1>Food Science</h1></div>
+    </div>
+    <div class="nav">
+        <div></div>
+        <ul class="nav-nav">
+            <li class="nav-item"><a href="index.html">메인</a></li>
+            <li class="nav-item"><a href="recipe.html">조리법</a></li>
+            <li class="nav-item"><a href="fs.html">조리과학</a></li>
+            <li class="nav-item"><a href="community.html">커뮤니티</a></li>
+        </ul>
+        <div></div>
+    </div>
+    <div class="reco">
+        <div>reco1</div>
+        <div id="reco2">reco2</div>
+        <div>reco3</div>
+    </div>
+    <div class="main">
+        <div class="article">article</div>
+        <div class="subarticle">
+            <div class="div-subarticle">
+                <div>1번</div>
+                <div>2번</div>
+            </div>
+            <div id="third">3번</div>
+        </div>
+    </div>
+</body>
+</html>
